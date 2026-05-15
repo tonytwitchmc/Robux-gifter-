@@ -21,10 +21,21 @@ body{background:#121215;color:#fff}
 .username{font-size:16px;font-weight:700;margin-bottom:20px}
 .menu div{padding:14px 12px;color:#ececec;font-size:17px;border-radius:8px}
 .menu div:hover{background:#151924}
-.subscribe{position:absolute;left:16px;right:16px;bottom:20px;padding:16px;border:1px solid #2b3040;border-radius:12px;color:#cfcfcf}
+.subscribe{position:absolute;left:16px;right:16px;bottom:20px;padding:16px;border:1px solid #2b3040;border-radius:12px;color:#cfcfcf;line-height:1.4}
 .main{margin-left:295px;padding-top:44px}
-.hero{height:315px;display:flex;align-items:center;justify-content:center}
+.hero{height:315px;border-bottom:1px solid #171a22;display:flex;align-items:center;justify-content:center}
 .hero h1{font-size:58px;font-weight:800}
+.content{max-width:770px;margin:0 auto;padding:24px 0 60px}
+.title{font-size:20px;font-weight:700;margin:18px 0}
+.panel{background:#121215;border:1px solid #272c39;border-radius:10px;overflow:hidden;margin-bottom:36px}
+.banner{height:116px;background:linear-gradient(90deg,#23252b,#4c2b24);display:flex;align-items:flex-end;padding:18px 20px;font-size:16px;font-weight:700}
+.row{display:flex;align-items:center;justify-content:space-between;padding:20px;border-top:1px solid #202431}
+.left{font-size:18px;font-weight:700}
+.old{font-size:14px;color:#71788d;text-decoration:line-through;margin-left:8px}
+.bonus{background:#232736;color:#d7d7d7;padding:6px 10px;border-radius:999px;font-size:12px;margin-left:12px}
+.buy{width:205px;height:40px;background:#343a4d;border:none;border-radius:8px;color:#fff;font-size:16px;font-weight:700}
+.faq .item{height:58px;border:1px solid #272c39;border-radius:8px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;color:#ddd}
+.footer{margin-top:36px;color:#9ca3b7;text-align:center;font-size:13px}
 .popup-bg{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;z-index:5000;opacity:0;transition:.2s}
 .popup-bg.show{opacity:1}
 .popup{position:absolute;top:60px;left:50%;transform:translateX(-50%);width:420px;background:#121215;border:1px solid #272c39;border-radius:12px;padding:22px}
@@ -32,18 +43,7 @@ body{background:#121215;color:#fff}
 .send{background:#4d73ff;border:none;font-weight:700;cursor:pointer}
 .avatar{width:72px;height:72px;border-radius:50%;background:#232734;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 10px;overflow:hidden}
 .avatar img{width:100%;height:100%;object-fit:cover}
-.check-circle{
-width:92px;
-height:92px;
-border:4px solid #2ecc71;
-border-radius:50%;
-margin:0 auto 14px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:46px;
-color:#2ecc71
-}
+.check-circle{width:92px;height:92px;border:4px solid #2ecc71;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:46px;color:#2ecc71}
 </style>
 </head>
 <body>
@@ -62,13 +62,42 @@ color:#2ecc71
 <div class="sidebar">
 <div class="username">ev_anthony</div>
 <div class="menu">
-<div>Home</div><div>Profile</div><div>Messages</div><div>Friends</div>
+<div>Home</div><div>Profile</div><div>Roblox Plus</div><div>Messages</div><div>Friends</div><div>Avatar</div>
+<div>Inventory</div><div>Trade</div><div>Communities</div><div>Blog</div><div>Official Store</div><div>Buy Gift Cards</div>
 </div>
 <div class="subscribe">More fun for less Robux.<br><br><u>Subscribe</u></div>
 </div>
 
 <div class="main">
 <div class="hero"><h1>Enjoy up to 25%<br>more Robux</h1></div>
+
+<div class="content">
+<div class="title">Bonus item we picked for you</div>
+<div class="panel">
+<div class="banner">Steal a Brainrot<br><span style="font-size:14px;font-weight:400">2x Money</span></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">24,000 <span class="old">22,500</span><span class="bonus">+1500 more</span></div><button class="buy">$199.99</button></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">11,000 <span class="old">10,000</span><span class="bonus">+1000 more</span></div><button class="buy">$99.99</button></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">5,250 <span class="old">4,500</span><span class="bonus">+750 more</span></div><button class="buy">$49.99</button></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">2,000 <span class="old">1,700</span><span class="bonus">+300 more</span></div><button class="buy">$19.99</button></div>
+</div>
+
+<div class="title">Robux packages</div>
+<div class="panel">
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">1,000</div><button class="buy">$9.99</button></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">500</div><button class="buy">$4.99</button></div>
+<div class="row"><div class="left"><img src="robux.png" class="robux-icon">180</div><button class="buy">$1.99</button></div>
+</div>
+
+<div class="title">FAQ</div>
+<div class="faq">
+<div class="item"><span>What are Robux?</span><span>⌄</span></div>
+<div class="item"><span>Where are my Robux?</span><span>⌄</span></div>
+<div class="item"><span>Do Robux expire?</span><span>⌄</span></div>
+<div class="item"><span>How to redeem your gift card?</span><span>⌄</span></div>
+</div>
+
+<div class="footer">©2026 Roblox Corporation</div>
+</div>
 </div>
 
 <div id="popupBg" class="popup-bg">
@@ -103,106 +132,103 @@ let robuxBalance=2789556;
 let searchTimeout;
 
 function updateBalance(){
-topBalance.innerText=robuxBalance.toLocaleString();
+ topBalance.innerText=robuxBalance.toLocaleString();
 }
 
 function openSendPopup(){
-popupBg.style.display='block';
-setTimeout(()=>popupBg.classList.add('show'),10);
+ popupBg.style.display='block';
+ setTimeout(()=>popupBg.classList.add('show'),10);
 }
 
 function closeSendPopup(){
-popupBg.classList.remove('show');
-setTimeout(()=>{
-popupBg.style.display='none';
-step1.style.display='block';
-step2.style.display='none';
-step3.style.display='none';
-userSearch.value='';
-searchResults.innerHTML='';
-},200);
+ popupBg.classList.remove('show');
+ setTimeout(()=>{
+   popupBg.style.display='none';
+   step1.style.display='block';
+   step2.style.display='none';
+   step3.style.display='none';
+   userSearch.value='';
+   searchResults.innerHTML='';
+ },200);
+}
+
+async function searchUsers(query){
+ try{
+   let r=await fetch(`https://users.roproxy.com/v1/users/search?keyword=${encodeURIComponent(query)}&limit=10`);
+   let d=await r.json();
+   if(d?.data?.length) return d.data;
+ }catch(e){}
+
+ let r2=await fetch(`https://users.roblox.com/v1/users/search?keyword=${encodeURIComponent(query)}&limit=10`);
+ let d2=await r2.json();
+ return d2.data || [];
 }
 
 async function handleUserSearch(){
-clearTimeout(searchTimeout);
+ clearTimeout(searchTimeout);
+ let q=userSearch.value.trim();
+ searchResults.innerHTML='';
 
-let v=userSearch.value.trim();
-let loading=searchLoading;
-let results=searchResults;
+ if(!q){
+   searchLoading.style.display='none';
+   return;
+ }
 
-results.innerHTML='';
+ searchLoading.style.display='block';
 
-if(!v){
-loading.style.display='none';
-return;
-}
+ searchTimeout=setTimeout(async()=>{
+   try{
+     const users=await searchUsers(q);
+     searchLoading.style.display='none';
 
-loading.style.display='block';
+     if(!users.length){
+       searchResults.innerHTML='<div style="padding:14px;text-align:center;color:#999">No users found</div>';
+       return;
+     }
 
-searchTimeout=setTimeout(async()=>{
-try{
+     for(const user of users){
+       let t=await fetch(`https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=${user.id}&size=150x150&format=Png&isCircular=true`);
+       let td=await t.json();
+       let avatar=td?.data?.[0]?.imageUrl || "https://tr.rbxcdn.com/default-avatar-headshot.png";
 
-const res=await fetch(`https://users.roblox.com/v1/users/search?keyword=${encodeURIComponent(v)}&limit=10`);
-const data=await res.json();
+       let div=document.createElement('div');
+       div.style.padding='14px';
+       div.style.border='1px solid #272c39';
+       div.style.marginTop='12px';
+       div.style.borderRadius='8px';
+       div.style.cursor='pointer';
 
-loading.style.display='none';
+       div.innerHTML=`<div style="display:flex;align-items:center;gap:12px">
+       <img src="${avatar}" style="width:46px;height:46px;border-radius:50%">
+       <div><div>${user.name}</div><div style="font-size:13px;color:#999">@${user.displayName}</div></div></div>`;
 
-if(!data.data || !data.data.length){
-results.innerHTML='<div style="padding:14px;text-align:center;color:#999">No users found</div>';
-return;
-}
+       div.onclick=()=>{
+         selectedUserName.innerText=user.name;
+         selectedAvatar.innerHTML=`<img src="${avatar}">`;
+         step1.style.display='none';
+         step2.style.display='block';
+       };
 
-for(const user of data.data){
-
-const thumb=await fetch(`https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${user.id}&size=150x150&format=Png&isCircular=true`);
-const t=await thumb.json();
-const avatar=t.data[0].imageUrl;
-
-let div=document.createElement('div');
-div.style.padding='14px';
-div.style.border='1px solid #272c39';
-div.style.marginTop='12px';
-div.style.borderRadius='8px';
-div.style.cursor='pointer';
-
-div.innerHTML=`
-<div style="display:flex;align-items:center;gap:12px">
-<img src="${avatar}" style="width:46px;height:46px;border-radius:50%">
-<div>
-<div>${user.name}</div>
-<div style="font-size:13px;color:#999">@${user.displayName}</div>
-</div>
-</div>`;
-
-div.onclick=()=>{
-selectedUserName.innerText=user.name;
-selectedAvatar.innerHTML=`<img src="${avatar}">`;
-step1.style.display='none';
-step2.style.display='block';
-};
-
-results.appendChild(div);
-}
-
-}catch(e){
-loading.style.display='none';
-results.innerHTML='<div style="padding:14px;text-align:center;color:red">Failed to load users</div>';
-}
-},300);
+       searchResults.appendChild(div);
+     }
+   }catch(e){
+     searchLoading.style.display='none';
+     searchResults.innerHTML='<div style="padding:14px;text-align:center;color:red">Failed to load users</div>';
+   }
+ },300);
 }
 
 function sendRobux(){
-let amt=parseInt(customAmount.value)||0;
-robuxBalance-=amt;
-updateBalance();
-
-step2.style.display='none';
-step3.style.display='block';
-
-successText.innerHTML=`You sent <b>${amt} Robux</b> to ${selectedUserName.innerText}`;
+ let amt=parseInt(customAmount.value)||0;
+ robuxBalance-=amt;
+ updateBalance();
+ step2.style.display='none';
+ step3.style.display='block';
+ successText.innerHTML=`You sent <b>${amt} Robux</b> to ${selectedUserName.innerText}`;
 }
 
 updateBalance();
 </script>
+
 </body>
 </html>
