@@ -6,116 +6,746 @@
 <title>Buy Robux</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#121215;color:#fff}
-.topbar{position:fixed;top:0;left:0;right:0;height:44px;background:#121215;border-bottom:1px solid #232632;display:flex;align-items:center;padding:0 16px;z-index:1000}
-.logo{font-size:22px;font-weight:900;margin-right:28px}
-.topnav{display:flex;gap:26px;color:#ddd;font-size:13px}
-.search{margin-left:30px;width:430px;height:32px;background:#232734;border:1px solid #2a2e3a;border-radius:8px;padding:0 12px;color:#fff}
-.top-right{margin-left:auto;display:flex;align-items:center;gap:14px;color:#ddd}
-.top-send{height:30px;padding:0 18px;background:#4d73ff;border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer}
-.balance{display:flex;align-items:center;font-weight:700}
-.robux-icon-top,.robux-icon{width:18px;margin-right:8px}
-.robux-icon{vertical-align:-3px}
-.sidebar{position:fixed;top:44px;left:0;bottom:0;width:295px;background:#121215;border-right:1px solid #222632;padding:18px 16px}
-.username{font-size:16px;font-weight:700;margin-bottom:20px}
-.menu div{padding:14px 12px;color:#ececec;font-size:17px;border-radius:8px}
-.menu div:hover{background:#151924}
-.subscribe{position:absolute;left:16px;right:16px;bottom:20px;padding:16px;border:1px solid #2b3040;border-radius:12px;color:#cfcfcf}
-.main{margin-left:295px;padding-top:44px}
-.hero{height:315px;display:flex;align-items:center;justify-content:center}
-.hero h1{font-size:58px;font-weight:800}
-.content{max-width:770px;margin:0 auto;padding:24px 0 60px}
-.title{font-size:20px;font-weight:700;margin:18px 0}
-.panel{background:#121215;border:1px solid #272c39;border-radius:10px;overflow:hidden;margin-bottom:36px}
-.banner{height:116px;background:linear-gradient(90deg,#23252b,#4c2b24);display:flex;align-items:flex-end;padding:18px 20px;font-size:16px;font-weight:700}
-.row{display:flex;align-items:center;justify-content:space-between;padding:20px;border-top:1px solid #202431}
-.left{font-size:18px;font-weight:700}
-.old{font-size:14px;color:#71788d;text-decoration:line-through;margin-left:8px}
-.bonus{background:#232736;color:#d7d7d7;padding:6px 10px;border-radius:999px;font-size:12px;margin-left:12px}
-.buy{width:205px;height:40px;background:#343a4d;border:none;border-radius:8px;color:#fff;font-size:16px;font-weight:700}
-.faq .item{height:58px;border:1px solid #272c39;border-radius:8px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;color:#ddd}
-.footer{margin-top:36px;color:#9ca3b7;text-align:center;font-size:13px}
-.popup-bg{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;z-index:5000;opacity:0;transition:.2s}
-.popup-bg.show{opacity:1}
-.popup{position:absolute;top:60px;left:50%;transform:translateX(-50%);width:420px;background:#121215;border:1px solid #272c39;border-radius:12px;padding:22px}
-.popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
-.input,.send{width:100%;height:44px;background:#2f3442;border:1px solid #2a2e3a;border-radius:8px;padding:0 12px;color:#fff}
-.send{background:#4d73ff;border:none;font-weight:700;cursor:pointer}
-.amount-wrap{position:relative;margin-bottom:14px}
-.amount-wrap img{position:absolute;left:12px;top:13px;width:18px}
-.amount-wrap input{padding-left:38px}
-.avatar{width:72px;height:72px;border-radius:50%;background:#232734;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 10px;overflow:hidden}
-.avatar img{width:100%;height:100%;object-fit:cover}
-.check-circle{width:92px;height:92px;border:4px solid #2ecc71;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:46px;color:#2ecc71}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif
+}
+
+body{
+background:#121215;
+color:#fff
+}
+
+.topbar{
+position:fixed;
+top:0;
+left:0;
+right:0;
+height:44px;
+background:#121215;
+border-bottom:1px solid #232632;
+display:flex;
+align-items:center;
+padding:0 16px;
+z-index:1000
+}
+
+.logo{
+font-size:22px;
+font-weight:900;
+letter-spacing:-1px;
+margin-right:28px
+}
+
+.topnav{
+display:flex;
+gap:26px;
+color:#ddd;
+font-size:13px
+}
+
+.search{
+margin-left:30px;
+width:430px;
+height:32px;
+background:#232734;
+border:1px solid #2a2e3a;
+border-radius:8px;
+padding:0 12px;
+color:#fff
+}
+
+.top-right{
+margin-left:auto;
+display:flex;
+align-items:center;
+gap:14px;
+color:#ddd;
+font-size:13px
+}
+
+.top-send{
+height:30px;
+padding:0 18px;
+background:#4d73ff;
+border:none;
+border-radius:8px;
+color:#fff;
+font-weight:700;
+cursor:pointer
+}
+
+.balance{
+display:flex;
+align-items:center;
+font-weight:700
+}
+
+.robux-icon-top{
+width:18px;
+margin-right:8px
+}
+
+.robux-icon{
+width:18px;
+vertical-align:-3px;
+margin-right:8px
+}
+
+.sidebar{
+position:fixed;
+top:44px;
+left:0;
+bottom:0;
+width:295px;
+background:#121215;
+border-right:1px solid #222632;
+padding:18px 16px
+}
+
+.username{
+font-size:16px;
+font-weight:700;
+margin-bottom:20px
+}
+
+.menu div{
+padding:14px 12px;
+color:#ececec;
+font-size:17px;
+border-radius:8px
+}
+
+.menu div:hover{
+background:#151924
+}
+
+.subscribe{
+position:absolute;
+left:16px;
+right:16px;
+bottom:20px;
+padding:16px;
+border:1px solid #2b3040;
+border-radius:12px;
+color:#cfcfcf;
+line-height:1.4
+}
+
+.main{
+margin-left:295px;
+padding-top:44px
+}
+
+.hero{
+height:315px;
+border-bottom:1px solid #171a22;
+background:
+linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+radial-gradient(circle at center,#1c1c22 0,#121215 65%);
+background-size:28px 28px,28px 28px,100% 100%;
+display:flex;
+align-items:center;
+justify-content:center
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.05;
+font-weight:800;
+max-width:640px;
+transform:translateY(24px)
+}
+
+.content{
+max-width:770px;
+margin:0 auto;
+padding:24px 0 60px
+}
+
+.title{
+font-size:20px;
+font-weight:700;
+margin:18px 0
+}
+
+.panel{
+background:#121215;
+border:1px solid #272c39;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:36px
+}
+
+.banner{
+height:116px;
+background:linear-gradient(90deg,#23252b,#4c2b24);
+display:flex;
+align-items:flex-end;
+padding:18px 20px;
+font-size:16px;
+font-weight:700
+}
+
+.row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:20px;
+border-top:1px solid #202431
+}
+
+.left{
+font-size:18px;
+font-weight:700
+}
+
+.old{
+font-size:14px;
+color:#71788d;
+text-decoration:line-through;
+margin-left:8px
+}
+
+.bonus{
+background:#232736;
+color:#d7d7d7;
+padding:6px 10px;
+border-radius:999px;
+font-size:12px;
+margin-left:12px
+}
+
+.buy{
+width:205px;
+height:40px;
+background:#343a4d;
+border:none;
+border-radius:8px;
+color:#fff;
+font-size:16px;
+font-weight:700;
+cursor:pointer
+}
+
+.faq .item{
+height:58px;
+border:1px solid #272c39;
+border-radius:8px;
+padding:0 16px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:14px;
+color:#ddd
+}
+
+.footer{
+margin-top:36px;
+color:#9ca3b7;
+text-align:center;
+font-size:13px
+}
+
+.popup-bg{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.82);
+display:none;
+z-index:5000;
+opacity:0;
+transition:opacity .2s
+}
+
+.popup-bg.show{
+opacity:1
+}
+
+.popup{
+position:absolute;
+top:60px;
+left:50%;
+transform:translateX(-50%) scale(.96);
+width:420px;
+max-height:85vh;
+overflow-y:auto;
+background:#121215;
+border:1px solid #272c39;
+border-radius:12px;
+padding:22px;
+transition:transform .18s
+}
+
+.popup-bg.show .popup{
+transform:translateX(-50%) scale(1)
+}
+
+.popup-close{
+float:right;
+color:#aaa;
+font-size:22px;
+cursor:pointer
+}
+
+.popup-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:18px;
+padding-right:28px
+}
+
+.popup-title{
+font-size:20px;
+font-weight:700
+}
+
+.balance-popup-inner{
+display:flex;
+align-items:center;
+color:#9ca3b7;
+font-size:14px;
+font-weight:700
+}
+
+.balance-popup-inner img{
+width:14px;
+margin-left:4px;
+margin-right:3px
+}
+
+.input,.send{
+width:100%;
+height:44px;
+background:#2f3442;
+border:1px solid #2a2e3a;
+border-radius:8px;
+padding:0 12px;
+color:#fff
+}
+
+.send{
+background:#4d73ff;
+border:none;
+font-weight:700;
+cursor:pointer
+}
+
+.cancel{
+width:100%;
+height:44px;
+background:#343a4d;
+border:none;
+border-radius:8px;
+color:#fff;
+font-weight:700;
+cursor:pointer;
+margin-bottom:10px
+}
+
+.avatar{
+width:72px;
+height:72px;
+border-radius:50%;
+background:#232734;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+margin:0 auto 10px;
+overflow:hidden
+}
+
+.avatar img{
+width:100%;
+height:100%;
+object-fit:cover
+}
+
+.amount-wrap{
+position:relative;
+margin-bottom:14px
+}
+
+.amount-wrap img{
+position:absolute;
+left:12px;
+top:13px;
+width:18px;
+height:18px
+}
+
+.amount-wrap input{
+padding-left:38px
+}
+
+.quick{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-bottom:14px
+}
+
+.quick button{
+width:78px;
+height:40px;
+background:#3d4458;
+border:none;
+border-radius:8px;
+color:#fff;
+font-weight:700;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:6px
+}
+
+.quick button img{
+width:16px
+}
+
+.loading{
+display:none;
+text-align:center;
+padding:28px 0
+}
+
+.spinner{
+width:64px;
+height:64px;
+margin:0 auto 16px;
+border:5px solid #2f3442;
+border-top:5px solid #4d73ff;
+border-radius:50%;
+animation:spin .9s linear infinite
+}
+
+.loading h2{
+font-size:24px;
+line-height:1.1
+}
+
+@keyframes spin{
+to{
+transform:rotate(360deg)
+}
+}
+
+@keyframes spinSearch{
+to{
+transform:rotate(360deg)
+}
+}
+
+.success{
+display:none;
+text-align:center;
+padding:18px 0
+}
+
+.check-circle{
+width:92px;
+height:92px;
+border:4px solid #2ecc71;
+border-radius:50%;
+margin:0 auto 14px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:46px;
+color:#2ecc71
+}
+
+.success h2{
+font-size:24px;
+line-height:1.1;
+margin-bottom:6px
+}
+
+.success p{
+color:#9ca3b7;
+margin-bottom:16px;
+line-height:1.15
+}
+
+.success strong{
+color:#fff;
+font-weight:800
+}
+
+.confirm-box{
+text-align:center;
+padding:8px 0
+}
+
+.confirm-box h2{
+font-size:24px;
+line-height:1.1;
+margin-bottom:8px
+}
+
+.confirm-box p{
+color:#9ca3b7;
+margin-bottom:16px;
+line-height:1.15
+}
 </style>
 </head>
+
 <body>
 
 <div class="topbar">
 <div class="logo">ROBLOX</div>
-<div class="topnav"><div>Charts</div><div>Marketplace</div><div>Create</div><div>Robux</div></div>
+
+<div class="topnav">
+<div>Charts</div>
+<div>Marketplace</div>
+<div>Create</div>
+<div>Robux</div>
+</div>
+
 <input class="search" placeholder="Search">
+
 <div class="top-right">
-<div class="balance"><img src="robux.png" class="robux-icon-top"><span id="topBalance">2,789,556</span></div>
+<div class="balance">
+<img src="robux.png" class="robux-icon-top">
+<span id="topBalance">2,789,556</span>
+</div>
+
 <button class="top-send" onclick="openSendPopup()">Send</button>
+
 <div>ev_anthony</div>
 </div>
 </div>
 
 <div class="sidebar">
 <div class="username">ev_anthony</div>
-<div class="menu"><div>Home</div><div>Profile</div><div>Messages</div><div>Friends</div></div>
-<div class="subscribe">More fun for less Robux.<br><br><u>Subscribe</u></div>
+
+<div class="menu">
+<div>Home</div>
+<div>Profile</div>
+<div>Roblox Plus</div>
+<div>Messages</div>
+<div>Friends</div>
+<div>Avatar</div>
+<div>Inventory</div>
+<div>Trade</div>
+<div>Communities</div>
+<div>Blog</div>
+<div>Official Store</div>
+<div>Buy Gift Cards</div>
+</div>
+
+<div class="subscribe">
+More fun for less Robux. Subscribe to Roblox Plus.
+<br><br>
+<u>Subscribe</u>
+</div>
 </div>
 
 <div class="main">
-<div class="hero"><h1>Enjoy up to 25%<br>more Robux</h1></div>
+
+<div class="hero">
+<h1>
+Enjoy up to 25%
+<br>
+more Robux
+</h1>
+</div>
 
 <div class="content">
-<div class="title">Robux packages</div>
+
+<div class="title">Bonus item we picked for you</div>
+
 <div class="panel">
-<div class="row"><div class="left"><img src="robux.png" class="robux-icon">1,000</div><button class="buy">$9.99</button></div>
-<div class="row"><div class="left"><img src="robux.png" class="robux-icon">500</div><button class="buy">$4.99</button></div>
-<div class="row"><div class="left"><img src="robux.png" class="robux-icon">180</div><button class="buy">$1.99</button></div>
+
+<div class="banner">
+Steal a Brainrot
+<br>
+<span style="font-size:14px;font-weight:400">
+2x Money
+</span>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+24,000
+<span class="old">22,500</span>
+<span class="bonus">+1500 more</span>
+</div>
+<button class="buy">$199.99</button>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+11,000
+<span class="old">10,000</span>
+<span class="bonus">+1000 more</span>
+</div>
+<button class="buy">$99.99</button>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+5,250
+<span class="old">4,500</span>
+<span class="bonus">+750 more</span>
+</div>
+<button class="buy">$49.99</button>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+2,000
+<span class="old">1,700</span>
+<span class="bonus">+300 more</span>
+</div>
+<button class="buy">$19.99</button>
+</div>
+
+</div>
+
+<div class="title">Robux packages</div>
+
+<div class="panel">
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+1,000
+</div>
+<button class="buy">$9.99</button>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+500
+</div>
+<button class="buy">$4.99</button>
+</div>
+
+<div class="row">
+<div class="left">
+<img src="robux.png" class="robux-icon">
+180
+</div>
+<button class="buy">$1.99</button>
+</div>
+
 </div>
 
 <div class="title">FAQ</div>
+
 <div class="faq">
 <div class="item"><span>What are Robux?</span><span>⌄</span></div>
 <div class="item"><span>Where are my Robux?</span><span>⌄</span></div>
 <div class="item"><span>Do Robux expire?</span><span>⌄</span></div>
+<div class="item"><span>How to redeem your gift card?</span><span>⌄</span></div>
 </div>
+
+<div class="footer">©2026 Roblox Corporation</div>
+
 </div>
 </div>
 
 <div id="popupBg" class="popup-bg">
+
 <div class="popup">
 
+<div class="popup-close" onclick="closeSendPopup()">✕</div>
+
 <div id="step1">
+
 <div class="popup-header">
-<h2>Send Robux</h2>
-<div>Available: <img src="robux.png" class="robux-icon"> <span id="popupBalance">2.8M</span></div>
+<div class="popup-title">Send Robux</div>
+<div class="balance-popup-inner">
+Available:
+<img src="robux.png">
+<span id="popupBalance">2.8M</span>
 </div>
-<input id="userSearch" class="input" placeholder="Search Roblox username" oninput="handleUserSearch()">
-<div id="searchLoading" style="display:none;padding:12px;text-align:center">Loading...</div>
+</div>
+
+<input
+id="userSearch"
+class="input"
+type="text"
+placeholder="Search Roblox username"
+oninput="handleUserSearch()"
+>
+
+<div id="searchLoading" style="display:none;text-align:center;padding:14px;color:#9ca3b7;font-size:14px">
+<div style="display:flex;align-items:center;justify-content:center;gap:10px;">
+<div style="width:18px;height:18px;border:3px solid #3a4254;border-top:3px solid #ffffff;border-radius:50%;animation:spinSearch .7s linear infinite"></div>
+<span>Loading...</span>
+</div>
+</div>
+
 <div id="searchResults"></div>
+
+<div style="margin-top:22px;text-align:left;border-top:1px solid #272c39;padding-top:16px;">
+<div style="font-size:16px;font-weight:700;margin-bottom:10px;">My friends (0)</div>
+<div style="height:90px;background:#1b1f2a;border:1px solid #2a2e3a;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#9ca3b7;font-size:14px;">
+No friends yet
+</div>
+</div>
 </div>
 
 <div id="step2" style="display:none;text-align:center">
-<div class="avatar" id="selectedAvatar">👤</div>
-<div id="selectedUserName" style="font-size:30px;font-weight:700;margin-bottom:12px">user</div>
-<div class="amount-wrap">
+
+<div class="popup-header">
+<div class="popup-title">Send Robux</div>
+<div class="balance-popup-inner">
+Available:
 <img src="robux.png">
-<input id="customAmount" class="input" type="number" value="300">
+<span id="popupBalance2">2.8M</span>
 </div>
-<button class="send" onclick="sendRobux()">Send</button>
 </div>
 
-<div id="step3" style="display:none;text-align:center">
+<div class="avatar" id="selectedAvatar">👤</div>
+
+<div id="selectedUserName" style="font-size:34px;font-weight:700;margin-bottom:12px">user</div>
+
+<div class="amount-wrap">
+<img src="robux.png">
+<input id="customAmount" class="input" type="number" value="300" min="1">
+</div>
+
+<div class="quick">
+<button onclick="setGift(25)"><img src="robux.png">25</button>
+<button onclick="setGift(50)"><img src="robux.png">50</button>
+<button onclick="setGift(100)"><img src="robux.png">100</button>
+<button onclick="setGift(200)"><img src="robux.png">200</button>
+</div>
+
+<button class="send" onclick="showConfirm()">Next</button>
+
+</div>
+
+<div id="confirmStep" class="confirm-box" style="display:none">
+<h2>Confirm Send</h2>
+<p id="confirmText"></p>
+<button class="cancel" onclick="backToAmount()">Cancel</button>
+<button class="send" onclick="sendRobux()">Confirm</button>
+</div>
+
+<div id="loadingStep" class="loading">
+<div class="spinner"></div>
+<h2>Sending Robux...</h2>
+</div>
+
+<div id="step3" class="success">
 <div class="check-circle">✓</div>
 <h2>Robux Sent!</h2>
-<p id="successText"></p><br>
+<p id="successText"></p>
 <button class="send" onclick="closeSendPopup()">Done</button>
 </div>
 
@@ -123,106 +753,182 @@ body{background:#121215;color:#fff}
 </div>
 
 <script>
-let robuxBalance=2789556;
+let robuxBalance = 2789556;
 let searchTimeout;
-let currentSearch=0;
+let currentSearchToken = 0;
+
+function formatRobux(num){
+if(num >= 1000000){
+let n = (num / 1000000).toFixed(1);
+if(n.endsWith('.0')) n = parseInt(n);
+return n + 'M';
+}
+return num.toLocaleString();
+}
 
 function updateBalance(){
- topBalance.innerText=robuxBalance.toLocaleString();
- popupBalance.innerText=(robuxBalance/1000000).toFixed(1)+'M';
+topBalance.innerText = robuxBalance.toLocaleString();
+let s = formatRobux(robuxBalance);
+popupBalance.innerText = s;
+popupBalance2.innerText = s;
 }
 
 function openSendPopup(){
- popupBg.style.display='block';
- setTimeout(()=>popupBg.classList.add('show'),10);
+resetPopup();
+updateBalance();
+popupBg.style.display='block';
+setTimeout(()=>popupBg.classList.add('show'),10);
 }
 
 function closeSendPopup(){
- popupBg.classList.remove('show');
- setTimeout(()=>{
-   popupBg.style.display='none';
-   step1.style.display='block';
-   step2.style.display='none';
-   step3.style.display='none';
-   userSearch.value='';
-   searchResults.innerHTML='';
-   customAmount.value=300;
- },200);
+popupBg.classList.remove('show');
+setTimeout(()=>{
+popupBg.style.display='none';
+resetPopup();
+},180);
+}
+
+function resetPopup(){
+step1.style.display='block';
+step2.style.display='none';
+confirmStep.style.display='none';
+loadingStep.style.display='none';
+step3.style.display='none';
+userSearch.value='';
+customAmount.value=300;
+searchResults.innerHTML='';
+searchLoading.style.display='none';
+selectedAvatar.innerHTML='👤';
 }
 
 async function handleUserSearch(){
- clearTimeout(searchTimeout);
- const token=++currentSearch;
+let v = userSearch.value.trim();
+let loading = searchLoading;
+let results = searchResults;
 
- let q=userSearch.value.trim();
- searchResults.innerHTML='';
+clearTimeout(searchTimeout);
+results.innerHTML='';
 
- if(!q){
-   searchLoading.style.display='none';
-   return;
- }
+if(!v){
+loading.style.display='none';
+return;
+}
 
- searchLoading.style.display='block';
+loading.style.display='block';
+const token = ++currentSearchToken;
 
- searchTimeout=setTimeout(async()=>{
-   try{
-     let r=await fetch(`https://users.roproxy.com/v1/users/search?keyword=${encodeURIComponent(q)}&limit=10`);
-     let d=await r.json();
+searchTimeout = setTimeout(async()=>{
+try{
+const response = await fetch(
+`https://users.roproxy.com/v1/users/search?keyword=${encodeURIComponent(v)}&limit=10`
+);
 
-     if(token!==currentSearch) return;
+const data = await response.json();
 
-     searchLoading.style.display='none';
+if(token !== currentSearchToken) return;
 
-     if(!d?.data?.length){
-       searchResults.innerHTML='<div style="padding:14px;text-align:center;color:#999">No users found</div>';
-       return;
-     }
+loading.style.display='none';
 
-     for(const user of d.data){
-       let t=await fetch(`https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=${user.id}&size=150x150&format=Png&isCircular=true`);
-       let td=await t.json();
-       let avatar=td?.data?.[0]?.imageUrl || 'https://tr.rbxcdn.com/default-avatar-headshot.png';
+if(!data.data || data.data.length===0){
+results.innerHTML=`<div style="padding:14px;border:1px solid #272c39;border-radius:8px;margin-top:12px;background:#171b25;color:#9ca3b7;text-align:center;">No users found</div>`;
+return;
+}
 
-       if(token!==currentSearch) return;
+for(const user of data.data){
 
-       let div=document.createElement('div');
-       div.style.padding='14px';
-       div.style.border='1px solid #272c39';
-       div.style.marginTop='12px';
-       div.style.borderRadius='8px';
-       div.style.cursor='pointer';
+const thumbRes = await fetch(
+`https://thumbnails.roproxy.com/v1/users/avatar-headshot?userIds=${user.id}&size=150x150&format=Png&isCircular=true`
+);
 
-       div.innerHTML=`<div style="display:flex;align-items:center;gap:12px">
-       <img src="${avatar}" onerror="this.src='https://tr.rbxcdn.com/default-avatar-headshot.png'" style="width:46px;height:46px;border-radius:50%">
-       <div><div>${user.name}</div><div style="font-size:13px;color:#999">@${user.displayName}</div></div></div>`;
+const thumbData = await thumbRes.json();
 
-       div.onclick=()=>{
-         selectedUserName.innerText=user.name;
-         selectedAvatar.innerHTML=`<img src="${avatar}">`;
-         step1.style.display='none';
-         step2.style.display='block';
-       };
+let avatarUrl =
+thumbData?.data?.[0]?.imageUrl ||
+'https://tr.rbxcdn.com/default-avatar-headshot.png';
 
-       searchResults.appendChild(div);
-     }
+if(token !== currentSearchToken) return;
 
-   }catch{
-     searchLoading.style.display='none';
-     searchResults.innerHTML='<div style="padding:14px;text-align:center;color:red">Failed to load users</div>';
-   }
- },300);
+let div = document.createElement('div');
+div.style.padding='14px';
+div.style.border='1px solid #272c39';
+div.style.borderRadius='8px';
+div.style.marginTop='12px';
+div.style.cursor='pointer';
+div.style.background='#171b25';
+div.style.transition='0.15s';
+
+div.onmouseenter=()=>div.style.background='#202636';
+div.onmouseleave=()=>div.style.background='#171b25';
+
+div.innerHTML=`
+<div style="display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:12px">
+<img src="${avatarUrl}" onerror="this.src='https://tr.rbxcdn.com/default-avatar-headshot.png'" style="width:46px;height:46px;border-radius:50%;background:#232734;object-fit:cover;">
+<div>
+<div style="font-weight:700">${user.name}</div>
+<div style="font-size:13px;color:#9ca3b7">@${user.displayName}</div>
+</div>
+</div>
+<span style="color:#9ca3b7">Select</span>
+</div>
+`;
+
+div.onclick=()=>{
+selectedUserName.innerText = user.name;
+selectedAvatar.innerHTML = `<img src="${avatarUrl}" style="width:72px;height:72px;border-radius:50%;object-fit:cover;">`;
+step1.style.display='none';
+step2.style.display='block';
+};
+
+results.appendChild(div);
+}
+
+}catch(err){
+loading.style.display='none';
+results.innerHTML=`<div style="padding:14px;border:1px solid #272c39;border-radius:8px;margin-top:12px;background:#171b25;color:#ff6b6b;text-align:center;">Failed to load users</div>`;
+console.error(err);
+}
+},300);
+}
+
+function setGift(v){
+event.preventDefault();
+customAmount.value=v;
+}
+
+function showConfirm(){
+let amount = parseInt(customAmount.value)||0;
+if(amount<=0)return;
+step2.style.display='none';
+confirmText.innerHTML=`Send <strong>${amount} Robux</strong> to <strong>${selectedUserName.innerText}</strong>?`;
+confirmStep.style.display='block';
+}
+
+function backToAmount(){
+confirmStep.style.display='none';
+step2.style.display='block';
 }
 
 function sendRobux(){
- let amt=parseInt(customAmount.value)||0;
- robuxBalance-=amt;
- updateBalance();
- step2.style.display='none';
- step3.style.display='block';
- successText.innerHTML=`You sent <b>${amt} Robux</b> to ${selectedUserName.innerText}`;
+let amount=parseInt(customAmount.value)||0;
+if(amount>robuxBalance){
+alert('Not enough Robux');
+return;
+}
+robuxBalance-=amount;
+updateBalance();
+confirmStep.style.display='none';
+loadingStep.style.display='block';
+
+setTimeout(()=>{
+loadingStep.style.display='none';
+successText.innerHTML=`You sent <strong>${amount} Robux</strong> to ${selectedUserName.innerText}`;
+step3.style.display='block';
+},1500);
 }
 
 updateBalance();
 </script>
+
 </body>
 </html>
